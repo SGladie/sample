@@ -1,0 +1,447 @@
+@font-face{
+  font-family: 'rakkas';
+  src: url(../fonts/rakkas/rakkas.ttf);
+}
+@font-face{
+  font-family: "Pacifico";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/pacifico/Pacifico-Regular.ttf);
+}
+.welcome-content p{
+  font-family: 'Pacifico';
+}
+.welcome-content h4{
+  font-family: 'rakkas';
+}
+
+nav{
+	background: #000000;
+	color: #ffffff;
+}
+.nav-item{
+	list-style: none;
+}
+li{
+	display: inline-block;
+	padding: 20px;
+}
+nav a{
+	color: #fff;
+}
+nav a:hover{
+	color: #00e6e6;
+	text-decoration: none;
+}
+.carousel-item img{
+	width: 100%;
+	height: 500px;
+}
+.carousel-indicators{
+	height: 16px;
+}
+.welcome-content{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.welcome-content h4{
+	text-align: center;
+	padding: 20px;
+}
+.welcome-content p{
+	text-align: justify;
+	font-size: 16px;
+}
+
+.pro-content h4{
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+}
+.pro-content{
+	background: #000000;
+}
+.abt-par h4{
+	text-align: justify;
+	padding-bottom: 20px;
+}
+.frm-con{
+	padding: 20px;
+	border: 1px solid #000000;
+	background: #000000;
+}
+.about-hm-con{
+	padding: 30px;
+}
+.frm-con h4{
+	color: #fff;
+	padding-bottom: 10px;
+}
+.logo-cl h4{
+	text-align: center;
+	padding: 20px;
+}
+/*----------------------------------------------form-----------------------------*/
+.form-item {
+  position: relative;
+}
+
+label, input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  color: #999;
+  font-size: clamp(14px, 1.5vw, 18px);
+  pointer-events: none;
+  user-select: none;
+}
+
+input, textarea {
+  width: 100%;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px !important;
+  padding: 12px;
+  font-size: clamp(15px, 1.5vw, 18px);
+}
+
+input:focus+label, 
+input:valid+label, 
+textarea:focus+label, 
+textarea:valid+label {
+  font-size: clamp(13px, 1.3vw, 16px);
+  color: #777;
+  top: -20px;
+  transition: all .225s ease;
+}
+
+.submit-btn {
+  background-color: #fd917e;
+  filter: drop-shadow(2px 2px 3px #0003);
+  color: #fff;
+  font-family: "Poppins",sans-serif;
+  font-size: clamp(16px, 1.6vw, 18px);
+  display: block;
+  padding: 12px 20px;
+  margin: 2px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.submit-btn:active {
+  transform: scale(1.1, 1.1);
+  filter: sepia(0.5);
+}
+/*-----------------------------------------forme end---------------------------*/
+.abt-par{
+	text-align: justify;
+}
+
+/*-----------------------carousel-------------------------------*/
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 250px;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.pro-content .carousel-control-prev,
+.pro-content .carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh !important;
+  height: 5vh !important;
+  border-radius: 50% !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+/*------------------------------------end form----------------------*/
+.item img{
+	width: 100%;
+	height: 250px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.gal-hm{
+	background: #000000;
+}
+.img-gal h4{
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+div.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+div.item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffc125;
+}
+div.item.red {
+  background-color: #e74c3c;
+}
+div.item.red i {
+  color: #e74c3c;
+}
+div.item i {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+div.item:hover i {
+transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+div.item .fa{
+	text-align: center;
+}
+
+
+
+/*-------------------------------ser---------------*/
+
+.logo-cl p{
+  text-align: justify;
+}
+
+/*----------------------footer-----------------*/
+
+.footer{
+  padding-top: 30px;
+  background: #000000;
+  color: #ffffff;
+ /* height: 350px;*/
+}
+.ft_con{
+  text-align: justify;
+}
+hr{
+  background: #fff;
+  list-style-position: ;
+}
+
+/*--------------------------------------end index-------------------------------------------*/
+/*------------------------------------start about-------------------------------------------*/
+
+.abt_title{
+  font-size: 28px;
+  font-weight: 500;
+  background: #ddd;
+  padding: 80px;
+  text-align: center;
+}
+.con_abtt_pas{
+  text-align: justify;
+  padding: 50px
+}
+.about_content h2{
+  color: #b96737;
+  font-weight: normal;
+}
+.abt_img img{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  width: 475px;
+  height:450px ;
+
+}
+
+/*--------------------------------------end about-------------------------------------------*/
+/*------------------------------------start service-------------------------------------------*/
+
+.ser_title{
+  background: #ddd;
+}
+.ser_title h2{
+  padding: 80px;
+  text-align: center;
+}
+.ser_maincon h5{
+  color: #b96737;
+  font-weight: 900;
+  padding-top: 50px;
+}
+.ser_maincon p{
+  text-align: justify;
+}
+.ser_maincon{
+  padding-bottom: 50px;
+}
+.ser_item h5{
+  color: #b96737;
+  font-weight: 700;
+}
+.ser_item p{
+  text-align: justify;
+}
+.ser_img img{
+  width: 100%;
+}
+.ser{
+  padding: 30px;
+  border: 1px solid;
+  margin-top: 20px;
+  box-shadow: 1px 1px 13px;
+}
+.ser_con{
+  padding-bottom: 50px;
+}
+
+/*--------------------------------------end service-------------------------------------------*/
+/*------------------------------------start gallery-------------------------------------------*/
+
+.gal_title{
+  background: #ddd;
+}
+.gal_title h2{
+  padding: 80px;
+  text-align: center;
+}
+.gal_con{
+  padding-bottom: 80px;
+  padding-top: 50px;
+}
+
+/*--------------------------------------end gallery-------------------------------------------*/
+/*------------------------------------start contact-------------------------------------------*/
+
+.con_title{
+  background: #ddd;
+}
+.con_title h2{
+  padding: 80px;
+  text-align: center;
+}
+.sub-btn{
+    background-color: #e5a906;
+    filter: drop-shadow(2px 2px 3px #0003);
+    color: #fff;
+    font-family: "Poppins",sans-serif;
+    font-size: clamp(16px, 1.6vw, 18px);
+    padding: 12px 20px;
+    margin: 2px auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+.sub-btn:hover{
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 360px) {
+  .carousel-item img{
+	width: 100%;
+	height: 350px;
+}
+.abt_img img {
+    padding-top: 6px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    width: 350px;
+    height: 330px;
+}
+
+}
+
+
+
+
+
+
+
+
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+.grid-sizer,.grid-item{
+  width:100%;
+  margin: 0px;
+  padding:0px;
+  vertical-align: center;
+  padding: 10px;
+  margin-bottom:20px;
+}
+
+@media only screen and (min-width:580px){
+  .grid-sizer,.grid-item{
+  width:50%;
+  margin: 0px;
+  padding:0px;
+  vertical-align: center;
+  padding: 10px;
+  margin-bottom:20px;
+}
+
+}
+
+
+
+
+@media only screen and (min-width:767px){
+  .grid-sizer,.grid-item{
+  width:33.3%;
+  margin: 0px;
+  padding:0px;
+  vertical-align: center;
+  padding: 10px;
+  margin-bottom:20px;
+}
+
+}
+
+
+/*.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+*/
